@@ -15,5 +15,6 @@ COPY conf-temp /aria2/conf-temp
 WORKDIR /
 VOLUME ["/aria2/conf", "/aria2/downloads"]
 EXPOSE 6800 80 8080
+EXPOSE 6881-6999
 
 CMD ["/aria2/init.sh"]
